@@ -1,5 +1,13 @@
-Insert into table1 values("kajal");
 use db1;
+
+create table table1(
+	name varchar(30),
+	class int	
+);
+Insert into table1 values("Radhika", 8),("Ramya", 8);
+
+select * from table1;
+
 select distinct(name) from table1;
 select * from table1 where class between 3 and 50;
 
@@ -9,12 +17,10 @@ select class, count(name) from table1 group by class;
 
 select class, avg(class) from table1 group by class order by class;
 
-truncate table table1;
-select * from table1;
 alter table table1 add marks int;
 alter table table1 add studid int;
 
-select * from table1;
+truncate table table1;
 
 Set SQL_SAFE_UPDATES=0;
 
