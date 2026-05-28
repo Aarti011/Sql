@@ -1,3 +1,4 @@
+-- BASIC SQL 
 use db1;
 
 create table table1(
@@ -22,6 +23,8 @@ alter table table1 add studid int;
 
 truncate table table1;
 
+-- UPDATE THE SETTINGS TO MAKE UPDATES IN ROWS
+
 Set SQL_SAFE_UPDATES=0;
 
 Insert into table1 
@@ -39,8 +42,6 @@ update table1 set marks=35 where studid=1420807223;
 delete from table1 where marks=35;
 
 Alter table table1 add Primary key (studid);
-
---
   
 create table IF NOT EXISTS table2 (
 	stdid int,
@@ -80,7 +81,7 @@ drop column batch;
 alter table newtable
 modify grade varchar(2) ;
  
---
+--JOINS IN TABLE
   
 create table t1(
 	c1 int,
