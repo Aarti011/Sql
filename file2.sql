@@ -27,3 +27,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, Amount) VALUES
 Select * from customers 
 join orders
 on custoemr.customerId=orders.customerId;
+
+select a.customerName, b.Amount from customers as a
+left join orders as b
+on a.customerId= b.customerId;
