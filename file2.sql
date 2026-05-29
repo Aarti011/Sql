@@ -1,9 +1,11 @@
+-- customer table
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     CustomerName VARCHAR(100),
     Country VARCHAR(50)
 );
 
+-- order table
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
@@ -21,3 +23,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, Amount) VALUES
 (101, 1, '2024-01-15', 250.00),
 (102, 1, '2024-02-10', 300.00),
 (103, 2, '2024-03-05', 150.00);
+
+Select * from customers 
+join orders
+on custoemr.customerId=orders.customerId;
