@@ -38,6 +38,18 @@ select name from table1 where marks > (Select avg(marks) from table1);
 
 Select name from employee where  (id % 2)=0;
 
+select max(marks) from (Select marks from table1 where class=8) as temp; 
+
+Create VIEW view1 as Select name, rollno, class from student;
+Select * from view;
+
+
+
+
+
+
+
+
 
 
 
