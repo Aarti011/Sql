@@ -31,3 +31,13 @@ on custoemr.customerId=orders.customerId;
 select a.customerName, b.Amount from customers as a
 left join orders as b
 on a.customerId= b.customerId;
+
+
+-- subqueries
+select name from table1 where marks > (Select avg(marks) from table1);
+
+Select name from employee where  (id % 2)=0;
+
+
+
+
