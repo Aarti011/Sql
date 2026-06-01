@@ -23,3 +23,14 @@ WHERE A.CustomerID <> B.CustomerID
 AND A.City = B.City
 ORDER BY A.City;
 
+-- unoin
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+SELECT Country FROM Customers
+UNION
+SELECT Country FROM Suppliers
+ORDER BY Country;
+
+
